@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101; /* mayor que el navbar que tiene z-index: 100 */
+  background: #585947;
+  color: #fff;
+  font-size: 12px;
+  font-family: "DM Sans", sans-serif;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 36px;
+}
+
+.topbar-left {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  height: 18px;
+}
+
+.topbar-rotating {
+  position: relative;
+  display: block;
+  height: 18px;
+}
+
+.topbar-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 18px;
+}
+
+.topbar-slide.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.topbar-social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.topbar-icon {
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  transition: color 0.15s;
+  text-decoration: none;
+}
+
+.topbar-icon:hover {
+  color: #fff;
+}

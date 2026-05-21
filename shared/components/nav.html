@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar — Nutriólogo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/shared/styles/global.css" />
+
+    <!-- Calendly -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="../../views/home/index.html" class="nav-logo">
+          <div class="nav-logo-mark">
+            <img
+              src="/shared/assets/images/LogoNav.webp"
+              alt="Dr. Carlos Zepeda"
+            />
+          </div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">Carlos Zepeda</span>
+            <span class="nav-logo-title">Nutriólogo certificado</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="../../views/aboutMe/index.html">¿Quién Soy?</a></li>
+          <li><a href="../../views/services/index.html">Servicios</a></li>
+          <!--<li><a href="../../views/shop/index.html">Tienda</a></li>-->
+        </ul>
+
+        <a
+          href="/views/home/index.html#producto-destacado"
+          class="nav-reto-badge"
+        >
+          <span class="nav-reto-dot"></span>
+          Producto del mes
+        </a>
+
+        <!-- Botón navbar escritorio -->
+        <a
+          href="#"
+          class="btn-nav-cta"
+          onclick="
+            Calendly.initPopupWidget({
+              url: 'https://calendly.com/nutricarloszep1',
+            });
+            return false;
+          "
+        >
+          Agendar cita ↗
+        </a>
+
+        <button class="nav-toggle" id="toggle" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="nav-drawer" id="drawer">
+        <a href="../../views/aboutMe/index.html">¿Quién Soy?</a>
+        <a href="../../views/services/index.html">Servicios</a>
+        <!--<a href="../../views/shop/index.html">Tienda</a>-->
+        <a href="/views/home/index.html#producto-destacado"
+          >🟢 Producto del mes — Proximamente</a
+        >
+
+        <!-- Botón drawer móvil -->
+        <a
+          href="#"
+          class="btn-nav-cta"
+          onclick="
+            Calendly.initPopupWidget({
+              url: 'https://calendly.com/nutricarloszep1',
+            });
+            return false;
+          "
+        >
+          Agendar cita ↗
+        </a>
+      </div>
+    </nav>
+
+    <script src="/shared/js/nav.js"></script>
+    <!-- Calendly -->
+    <script src="https://assets.calendly.com/assets/external/widget.js"></script>
+  </body>
+</html>

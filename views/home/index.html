@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="topbar"></div>
+    <div id="navbar"></div>
+
+    <!-- ── HERO CARRUSEL ── -->
+    <section class="hero">
+      <div class="slides" id="slides">
+        <!-- Slide 1 -->
+        <div
+          class="slide slide-1"
+          onclick="window.location.href = '../aboutMe/index.html'"
+        >
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <span class="slide-eyebrow">Nutrición personalizada</span>
+            <h1>Hoy comienza tu nuevo yo</h1>
+            <p>
+              Soy nutriólogo clínico. Te ayudo a transformar tu relación con la
+              comida de forma real, sostenible y sin dietas extremas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div
+          class="slide slide-2"
+          onclick="window.location.href = '../services/index.html#agendar'"
+        >
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <span class="slide-eyebrow">Consulta personalizada</span>
+            <h1>Un plan hecho solo para ti</h1>
+            <p>
+              Evaluación completa, seguimiento continuo y resultados reales.
+              Primera consulta presencial o virtual.
+            </p>
+            <div class="slide-actions">
+              <a
+                href="../services/index.html#agendar"
+                class="btn-white"
+                onclick="event.stopPropagation()"
+                >Agendar cita ↗</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div
+          class="slide slide-3"
+          onclick="window.location.href = '../services/index.html#guias-retos'"
+        >
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <span class="slide-eyebrow">Guias y Retos</span>
+            <h1>Encuentra el equilibrio entre salud y disfrute</h1>
+            <p>
+              Ebooks, retos y recursos prácticos para ayudarte a construir
+              hábitos saludables de forma realista y sostenible.
+            </p>
+            <div class="slide-actions">
+              <a
+                href="../services/index.html#guias-retos"
+                class="btn-white"
+                onclick="event.stopPropagation()"
+                >Ver programas</a
+              >
+              <!--<a
+                href="https://hotmart.com"
+                target="_blank"
+                class="btn-ghost-white"
+                onclick="event.stopPropagation()"
+                >Comprar ↗</a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ← cierra .slides -->
+
+      <!-- Flechas y dots FUERA de .slides, dentro de .hero -->
+      <div class="hero-arrow prev" id="prev">&#8249;</div>
+      <div class="hero-arrow next" id="next">&#8250;</div>
+      <div class="hero-dots" id="dots">
+        <div class="hero-dot active" data-i="0"></div>
+        <div class="hero-dot" data-i="1"></div>
+        <div class="hero-dot" data-i="2"></div>
+      </div>
+    </section>
+
+    <!-- ── PILARES ── -->
+    <section class="section">
+      <div class="container">
+        <p class="section-label">¿Qué hace diferente mi servicio?</p>
+        <h2 class="section-title">Un enfoque que sí funciona</h2>
+
+        <div class="enfoque-statement">
+          <p>
+            Mi enfoque no es el de una consulta tradicional de nutrición.
+            Combino <strong>ciencia, estrategia y personalización</strong> para
+            ayudar a cada paciente a mejorar su composición corporal y salud
+            metabólica sin recurrir a extremos.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card pillar-card--accent">
+            <span class="pillar-tag">Ciencia</span>
+            <p>
+              Cada decisión está respaldada por evidencia y conocimiento clínico
+              real.
+            </p>
+          </div>
+          <div class="pillar-card pillar-card--accent">
+            <span class="pillar-tag">Estrategia</span>
+            <p>
+              Un plan con propósito claro, no rutinas genéricas ni restricciones
+              sin sentido.
+            </p>
+          </div>
+          <div class="pillar-card pillar-card--accent">
+            <span class="pillar-tag">Personalización</span>
+            <p>
+              Diseñado para ti: tu cuerpo, tus objetivos, tu estilo de vida.
+            </p>
+          </div>
+        </div>
+
+        <div class="enfoque-closing">
+          <p>
+            La experiencia que ofrezco es
+            <strong>premium, profesional y cercana,</strong> donde el paciente
+            entiende el proceso, disfruta su alimentación y recibe
+            acompañamiento real durante todo su cambio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PRODUCTO DESTACADO ── -->
+    <section class="section section-alt" id="producto-destacado">
+      <div class="container">
+        <p class="section-label">Recurso Destacado</p>
+        <h2 class="section-title">Lo nuevo de este mes</h2>
+        <div class="proximamente-card">
+          <div class="proximamente-cover">
+            <img
+              src="../../shared/assets/images/Ebook portada 2 .webp"
+              alt="Portada ebook El error de comer menos"
+            />
+          </div>
+
+          <div class="proximamente-body">
+            <div class="proximamente-badge">
+              <span class="dot-orange"></span>
+              Próximamente · Junio 2026
+            </div>
+
+            <h3 class="proximamente-title">El error de comer menos</h3>
+
+            <p class="proximamente-desc">
+              Metabolismo, composición corporal y pérdida de grasa sostenible.
+              La guía que cambia cómo entiendes tu cuerpo.
+            </p>
+
+            <div class="proximamente-tags">
+              <span class="tag-pill">Ebook</span>
+              <span class="tag-pill">Pérdida de grasa</span>
+              <span class="tag-pill">Metabolismo</span>
+            </div>
+
+            <a
+              href="https://wa.me/526644326005?text=Quiero%20recibir%20la%20notificaci%C3%B3n%20cuando%20est%C3%A9%20listo%20el%20ebook%20%22El%20error%20de%20comer%20menos%22"
+              target="_blank"
+              rel="noopener"
+              class="btn-notificar"
+              >Notificarme →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ── TESTIMONIOS ── -->
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Resultados reales</p>
+        <h2 class="section-title">Lo que dicen mis pacientes</h2>
+        <div class="testimonios-grid">
+          <div class="testimonio-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>
+              "Excelente nutriologo, ha trabajado conmigo casi un año en mi
+              proceso de bajar de peso. He aprendido a comer mejor, y entender
+              como balancear mis dietas. Siempre disponible a mis dudas. Total
+              llevo 25 k menos y súper feliz. Super recomiendo su trabajo."
+            </blockquote>
+            <div class="testimonio-author">
+              <div class="avatar">Mb</div>
+              <div class="author-info">
+                <div class="name">Mara Bazan.</div>
+                <div class="location">Tijuana</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonio-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>
+              "As a human hes a kind and understanding person as a nutritionist
+              he's even more understading. After my surgery my surgeon had given
+              me green light to go ahead and eat but i was afraid my friends
+              sister recommended me to Carlos and i am very grratful for it.
+              Since day one he adapted my diets according to what i did eat and
+              to what i could eat after surgery. His meals where very helpful to
+              reintegrate myself to eating healthy and to lose the weight that
+              needed to be lost. I have lost over 35 kilos with his diets. He is
+              very motivating i wanted to give sometimes thinking i wasnt losing
+              the weight but i am very happy with what i have accomplished so
+              far with his help."
+            </blockquote>
+            <div class="testimonio-author">
+              <div class="avatar">YA</div>
+              <div class="author-info">
+                <div class="name">Yadira Alvarez.</div>
+                <div class="location">Mexico</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonio-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>
+              "Excelente nutricionista, muy amable, muy profesional en sus
+              planes y sobre tdoo que si sigues al pie de la letra sus planes de
+              alimentación tienes resultados seguros 👌 Recomendadisimo"
+            </blockquote>
+            <div class="testimonio-author">
+              <div class="avatar">KH</div>
+              <div class="author-info">
+                <div class="name">Karla Hoyos.</div>
+                <div class="location">Tijuana</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WA FLOTANTE ── -->
+    <a
+      href="https://wa.me/526644326005"
+      target="_blank"
+      rel="noopener"
+      class="wa-float"
+      aria-label="Escribir por WhatsApp"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 32 32"
+        width="28"
+        height="28"
+        fill="#fff"
+      >
+        <path
+          d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.47 2.027 7.773L0 32l8.427-2.01A15.938 15.938 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.265 13.265 0 01-6.79-1.864l-.487-.29-5.005 1.194 1.234-4.874-.317-.5A13.267 13.267 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.862c-.398-.2-2.355-1.162-2.72-1.294-.366-.133-.632-.2-.898.2-.266.398-1.03 1.294-1.263 1.56-.233.266-.465.3-.863.1-.398-.2-1.68-.619-3.2-1.974-1.183-1.055-1.982-2.358-2.214-2.756-.233-.398-.025-.613.175-.811.18-.178.398-.465.598-.698.2-.233.266-.398.398-.664.133-.266.066-.5-.033-.698-.1-.2-.898-2.163-1.23-2.962-.324-.778-.654-.673-.898-.685l-.765-.013c-.266 0-.698.1-1.063.5-.366.398-1.397 1.365-1.397 3.328s1.43 3.86 1.63 4.127c.2.266 2.814 4.296 6.819 6.025.953.411 1.696.657 2.276.841.956.305 1.826.262 2.514.159.767-.114 2.355-.963 2.688-1.893.333-.93.333-1.727.233-1.893-.1-.166-.366-.266-.764-.465z"
+        />
+      </svg>
+    </a>
+    <div id="footer"></div>
+    <script src="script.js"></script>
+    <script src="../../shared/js/topBar.js"></script>
+    <script src="../../shared/js/nav.js"></script>
+    <script src="../../shared/js/footer.js"></script>
+  </body>
+</html>
