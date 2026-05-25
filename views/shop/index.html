@@ -136,6 +136,32 @@
       .nav-toggle {
         display: none;
       }
+      @media (max-width: 860px) {
+        .nav-links,
+        .nav-reto-badge,
+        .btn-nav-cta {
+          display: none;
+        }
+        .nav-toggle {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 5px;
+          width: 36px;
+          height: 36px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 4px;
+          margin-left: auto;
+        }
+        .nav-toggle span {
+          display: block;
+          height: 1.5px;
+          background: var(--text);
+          border-radius: 2px;
+        }
+      }
     </style>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
