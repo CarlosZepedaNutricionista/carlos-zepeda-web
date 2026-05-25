@@ -13,7 +13,7 @@ function loadCalendly() {
 loadCalendly();
 
 // navbar common to all views
-fetch("../../shared/components/nav.html")
+fetch("/shared/components/nav.html")
   .then((r) => r.text())
   .then((html) => {
     const wrapper = document.getElementById("navbar");

@@ -1,4 +1,4 @@
-fetch("../../shared/components/topbar.html")
+fetch("/shared/components/topbar.html")
   .then((r) => r.text())
   .then((html) => {
     const wrapper = document.getElementById("topbar");
