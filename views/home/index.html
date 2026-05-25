@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
       rel="stylesheet"
     />
+    <style>
+      body { visibility: hidden; }
+    </style>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -47,7 +52,7 @@
               Primera consulta presencial o virtual.
             </p>
             <div class="slide-actions">
-              <a
+              
                 href="../services/index.html#agendar"
                 class="btn-white"
                 onclick="event.stopPropagation()"
@@ -71,25 +76,17 @@
               hábitos saludables de forma realista y sostenible.
             </p>
             <div class="slide-actions">
-              <a
+              
                 href="../services/index.html#guias-retos"
                 class="btn-white"
                 onclick="event.stopPropagation()"
                 >Ver programas</a
               >
-              <!--<a
-                href="https://hotmart.com"
-                target="_blank"
-                class="btn-ghost-white"
-                onclick="event.stopPropagation()"
-                >Comprar ↗</a>-->
             </div>
           </div>
         </div>
       </div>
-      <!-- ← cierra .slides -->
 
-      <!-- Flechas y dots FUERA de .slides, dentro de .hero -->
       <div class="hero-arrow prev" id="prev">&#8249;</div>
       <div class="hero-arrow next" id="next">&#8250;</div>
       <div class="hero-dots" id="dots">
@@ -180,7 +177,7 @@
               <span class="tag-pill">Metabolismo</span>
             </div>
 
-            <a
+            
               href="https://wa.me/526644326005?text=Quiero%20recibir%20la%20notificaci%C3%B3n%20cuando%20est%C3%A9%20listo%20el%20ebook%20%22El%20error%20de%20comer%20menos%22"
               target="_blank"
               rel="noopener"
@@ -191,6 +188,7 @@
         </div>
       </div>
     </section>
+
     <!-- ── TESTIMONIOS ── -->
     <section class="section">
       <div class="container">
@@ -256,7 +254,7 @@
     </section>
 
     <!-- ── WA FLOTANTE ── -->
-    <a
+    
       href="https://wa.me/526644326005"
       target="_blank"
       rel="noopener"
@@ -280,5 +278,8 @@
     <script src="../../shared/js/topBar.js"></script>
     <script src="../../shared/js/nav.js"></script>
     <script src="../../shared/js/footer.js"></script>
+    <script>
+      document.body.style.visibility = 'visible';
+    </script>
   </body>
 </html>
