@@ -158,6 +158,26 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
+/* Redes de pago */
+.footer-card-networks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.footer-card-networks svg {
+  width: 36px;
+  height: 24px;
+  border-radius: 4px;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.footer-card-networks svg:hover {
+  opacity: 1;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .footer-inner {
@@ -165,7 +185,10 @@
     gap: 90px;
   }
 
-  
+  .footer-card-networks svg {
+    width: 32px;
+    height: 21px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -175,13 +198,18 @@
     padding: 50px 24px 32px;
   }
 
-
   .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
+
+  .footer-card-networks {
+    gap: 5px;
+  }
+
+  .footer-card-networks svg {
+    width: 30px;
+    height: 20px;
+  }
 }
-
-
-

@@ -63,8 +63,8 @@ body {
 }
 
 /* ══════════════════════════════
-   HERO CARRUSEL — pantalla completa
-   ══════════════════════════════ */
+    HERO CARRUSEL — pantalla completa
+    ══════════════════════════════ */
 .hero {
   position: relative;
   width: 100%;
@@ -110,7 +110,7 @@ body {
 }
 
 .slide-1 {
-  background-image: url("../../shared/assets/images//Imagen\ portada\ principal\ \(banner\).webp");
+  background-image: url("../../shared/assets/images/Imagen\ portada\ principal\ \(banner\).webp");
   background-position: top center;
 }
 .slide-2 {
@@ -292,11 +292,20 @@ body {
       rgba(0, 0, 0, 0) 100%
     );
   }
+  .slide-1 {
+    background-image: url("../../shared/assets/images/Imagen\ portada\ principal\ \(banner\)V.webp");
+  }
+  .slide-2 {
+    background-image: url("../../shared/assets/images/4imagen\ bannerV.webp");
+  }
+  .slide-3 {
+    background-image: url("../../shared/assets/images/BannercomidasV.webp");
+  }
 }
 
 /* ══════════════════════════════
-   PILARES — nuevo enfoque
-   ══════════════════════════════ */
+    PILARES — nuevo enfoque
+    ══════════════════════════════ */
 .enfoque-statement {
   border-left: 3px solid var(--green-700);
   padding: 20px 24px;
@@ -386,8 +395,8 @@ body {
 }
 
 /* ══════════════════════════════
-   PRÓXIMAMENTE — Ebook card
-   ══════════════════════════════ */
+    PRÓXIMAMENTE — Ebook card
+    ══════════════════════════════ */
 .proximamente-card {
   display: flex;
   gap: 28px;
@@ -500,8 +509,8 @@ body {
 }
 
 /* ══════════════════════════════
-   TESTIMONIOS
-   ══════════════════════════════ */
+    TESTIMONIOS
+    ══════════════════════════════ */
 .testimonios-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -557,8 +566,8 @@ body {
 }
 
 /* ══════════════════════════════
-   SOBRE MÍ MINI
-   ══════════════════════════════ */
+    SOBRE MÍ MINI
+    ══════════════════════════════ */
 .sobre-mi-row {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -629,8 +638,8 @@ body {
 }
 
 /* ══════════════════════════════
-   WA FLOTANTE
-   ══════════════════════════════ */
+    WA FLOTANTE
+    ══════════════════════════════ */
 .wa-float {
   position: fixed;
   bottom: 24px;
