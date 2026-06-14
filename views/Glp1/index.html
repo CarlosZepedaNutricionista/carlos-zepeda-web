@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Método Anti-Rebote GLP-1™ · Carlos Zepeda Nutriólogo</title>
+    <link
+      rel="icon"
+      href="../../shared/assets/images/LogoNav.webp"
+      type="image/png"
+    />
+
+    <!-- Nav / Topbar styles (heredados del sitio) -->
+    <style>
+      :root {
+        --green-50: #eaf3de;
+        --green-100: #c0dd97;
+        --green-400: #639922;
+        --green-600: #3b6d11;
+        --green-700: #585947;
+        --green-800: #27500a;
+        --gray-100: #ededea;
+        --gray-500: #888780;
+        --text: #1a1a18;
+        --text-muted: #5f5e5a;
+        --radius-sm: 8px;
+      }
+      body {
+        padding-top: 116px;
+        background: #f0efeb;
+      }
+      .topbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 101;
+        background: #585947;
+        color: #fff;
+        font-size: 12px;
+        font-family: "DM Sans", sans-serif;
+        padding: 8px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        min-height: 36px;
+      }
+      .navbar {
+        position: fixed;
+        top: 43px;
+        left: 24px;
+        right: 24px;
+        z-index: 100;
+        background: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 10px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+      }
+      .nav-inner {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 24px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        flex-wrap: nowrap;
+        overflow: hidden;
+      }
+      .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        flex-shrink: 0;
+        margin-right: auto;
+      }
+      .nav-logo-mark {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+      .nav-logo-mark img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        list-style: none;
+      }
+      .nav-links a {
+        display: block;
+        padding: 7px 13px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-muted);
+        text-decoration: none;
+        border-radius: var(--radius-sm);
+        white-space: nowrap;
+      }
+      .nav-reto-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--green-800);
+        background: var(--green-50);
+        border: 1px solid var(--green-100);
+        border-radius: var(--radius-sm);
+        padding: 7px 13px;
+        text-decoration: none;
+      }
+      .nav-reto-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--green-400);
+      }
+      .btn-nav-cta {
+        display: inline-flex;
+        align-items: center;
+        background: var(--green-700);
+        color: #fff;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 9px 18px;
+        border-radius: var(--radius-sm);
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      .nav-toggle {
+        display: none;
+      }
+      @media (max-width: 860px) {
+        .nav-links,
+        .nav-reto-badge,
+        .btn-nav-cta {
+          display: none;
+        }
+        .nav-toggle {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 5px;
+          width: 36px;
+          height: 36px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 4px;
+          margin-left: auto;
+        }
+        .nav-toggle span {
+          display: block;
+          height: 1.5px;
+          background: var(--text);
+          border-radius: 2px;
+        }
+      }
+    </style>
+
+    <!-- Fuentes + Iconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+
+    <!-- Estilos de la página -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Nav y topbar inyectados por JS (igual que el resto del sitio) -->
+    <div id="topbar"></div>
+    <div id="navbar"></div>
+
+    <!-- ══════════════════════════════
+       HERO — imagen completa + texto
+       ══════════════════════════════ -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-badge">Programa de 90 días</span>
+        <h1 class="hero-title">
+          Método<br />Anti-Rebote<br /><span>GLP-1™</span>
+        </h1>
+        <p class="hero-hook">
+          Pierde grasa. Conserva músculo.<br />Aprende a mantener tus
+          resultados.
+        </p>
+        <p class="hero-sub">
+          El acompañamiento que me hubiera gustado que recibieran todos los
+          pacientes que utilizan GLP-1.
+        </p>
+        <a
+          href="https://calendly.com/nutricarloszep1/programaglp-1-metodo-antirebote"
+          class="btn-hero-primary"
+          onclick="
+            Calendly.initPopupWidget({
+              url: 'https://calendly.com/nutricarloszep1/programaglp-1-metodo-antirebote',
+            });
+            return false;
+          "
+          >Lo quiero ↗</a
+        >
+        >
+      </div>
+    </section>
+    <!-- Nota wireframe: reemplazar background-image del .hero con foto real de Carlos a pantalla completa -->
+
+    <!-- ══════════════════════════════
+       IDENTIFICACIÓN
+       ══════════════════════════════ -->
+    <div class="id-section">
+      <div class="id-inner">
+        <div class="id-header">
+          <p class="section-label">¿para quién es esto?</p>
+          <h2 class="id-title">Si estás usando GLP-1</h2>
+          <p class="id-sub">Probablemente te has preguntado:</p>
+        </div>
+        <div class="id-grid">
+          <div class="id-card">
+            <div class="id-icon">
+              <i class="ti ti-meat" aria-hidden="true"></i>
+            </div>
+            <div class="id-text">¿Estoy comiendo suficiente proteína?</div>
+          </div>
+          <div class="id-card">
+            <div class="id-icon">
+              <i class="ti ti-barbell" aria-hidden="true"></i>
+            </div>
+            <div class="id-text">¿Voy a perder músculo?</div>
+          </div>
+          <div class="id-card">
+            <div class="id-icon">
+              <i class="ti ti-pill" aria-hidden="true"></i>
+            </div>
+            <div class="id-text">¿Qué pasa cuando deje el medicamento?</div>
+          </div>
+          <div class="id-card">
+            <div class="id-icon">
+              <i class="ti ti-refresh" aria-hidden="true"></i>
+            </div>
+            <div class="id-text">¿Cómo evito recuperar el peso?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════
+       EL PROBLEMA
+       ══════════════════════════════ -->
+    <section class="section">
+      <p class="section-label">el problema</p>
+      <div class="prob-wrapper">
+        <div class="prob-grid">
+          <div>
+            <p class="prob-text">
+              La mayoría de las personas reciben el medicamento y logran bajar
+              de peso.<br /><br />
+              <strong
+                >Pero nadie les enseña cómo alimentarse, entrenar o prepararse
+                para mantener sus resultados.</strong
+              ><br /><br />
+              Ahí es donde aparece el rebote.
+            </p>
+          </div>
+          <div>
+            <ul class="check-list">
+              <li>
+                <i class="ti ti-circle-check" aria-hidden="true"></i>Pérdida de
+                masa muscular
+              </li>
+              <li>
+                <i class="ti ti-circle-check" aria-hidden="true"></i>Déficits
+                nutricionales
+              </li>
+              <li>
+                <i class="ti ti-circle-check" aria-hidden="true"></i>Relación
+                desordenada con la comida
+              </li>
+              <li>
+                <i class="ti ti-circle-check" aria-hidden="true"></i
+                >Recuperación del peso perdido
+              </li>
+              <li>
+                <i class="ti ti-circle-check" aria-hidden="true"></i>Ansiedad
+                sobre el futuro sin medicamento
+              </li>
+            </ul>
+            <div class="prob-highlight">
+              Este programa fue creado para prevenir todo eso.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+       QUÉ INCLUYE
+       ══════════════════════════════ -->
+    <div class="section-alt">
+      <div class="section-inner">
+        <p class="section-label">
+          ¿qué incluye el programa? — 90 días de acompañamiento
+        </p>
+        <div class="inc-grid">
+          <div class="inc-card">
+            <div class="inc-icon">
+              <i class="ti ti-user-check" aria-hidden="true"></i>
+            </div>
+            <div class="inc-label">Valoración inicial completa</div>
+          </div>
+          <div class="inc-card">
+            <div class="inc-icon">
+              <i class="ti ti-clipboard-list" aria-hidden="true"></i>
+            </div>
+            <div class="inc-label">Plan nutricional personalizado</div>
+          </div>
+          <div class="inc-card">
+            <div class="inc-icon">
+              <i class="ti ti-barbell" aria-hidden="true"></i>
+            </div>
+            <div class="inc-label">Rutina de entrenamiento</div>
+          </div>
+          <div class="inc-card">
+            <div class="inc-icon">
+              <i class="ti ti-calendar" aria-hidden="true"></i>
+            </div>
+            <div class="inc-label">4 sesiones estratégicas en 90 días</div>
+          </div>
+          <div class="inc-card">
+            <div class="inc-icon">
+              <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+            </div>
+            <div class="inc-label">Soporte WhatsApp 5 días/semana</div>
+          </div>
+          <div class="inc-card">
+            <div class="inc-icon">
+              <i class="ti ti-video" aria-hidden="true"></i>
+            </div>
+            <div class="inc-label">Biblioteca de recursos y videos</div>
+          </div>
+          <div class="inc-card">
+            <div class="inc-icon">
+              <i class="ti ti-users" aria-hidden="true"></i>
+            </div>
+            <div class="inc-label">Comunidad privada de apoyo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════
+       APRENDERÁS + QUOTE
+       ══════════════════════════════ -->
+    <section class="section">
+      <p class="section-label">aprenderás a</p>
+      <div class="learn-grid">
+        <ul class="check-list" style="padding-top: 0">
+          <li>
+            <i class="ti ti-circle-check" aria-hidden="true"></i>Cubrir proteína
+            incluso sin hambre
+          </li>
+          <li>
+            <i class="ti ti-circle-check" aria-hidden="true"></i>Entrenar para
+            mantener masa muscular
+          </li>
+          <li>
+            <i class="ti ti-circle-check" aria-hidden="true"></i>Interpretar
+            cambios de composición corporal
+          </li>
+          <li>
+            <i class="ti ti-circle-check" aria-hidden="true"></i>Manejar
+            saciedad extrema y efectos secundarios
+          </li>
+          <li>
+            <i class="ti ti-circle-check" aria-hidden="true"></i>Entender
+            antojos y centros de recompensa
+          </li>
+          <li>
+            <i class="ti ti-circle-check" aria-hidden="true"></i>Prepararte para
+            mantener resultados a largo plazo
+          </li>
+        </ul>
+        <div class="quote-block">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">
+            No se trata solo de bajar de peso. Se trata de construir las bases
+            para que puedas mantenerte bien, con o sin medicamento.
+          </p>
+          <div class="quote-sig">Carlos Zepeda</div>
+          <div class="quote-role">Nutriólogo</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+     TESTIMONIOS
+     ══════════════════════════════ -->
+    <div class="section-alt">
+      <div class="section-inner">
+        <p class="section-label">resultados reales</p>
+        <div class="test-grid">
+          <div class="test-card">
+            <div class="test-before-after">
+              <img
+                src="../../shared/assets/images/testimonio 1.webp"
+                alt="Resultado Mariana G."
+              />
+            </div>
+            <div class="stars">★★★★★</div>
+            <!--<p class="test-text">
+              "lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat"
+            </p>-->
+            <div class="test-author">Jocelyn Bojorquez</div>
+            <div class="test-role">Paciente GLP-1</div>
+          </div>
+          <div class="test-card">
+            <div class="test-before-after">
+              <img
+                src="../../shared/assets/images/testimonio 2.webp"
+                alt="Resultado Luis A."
+              />
+            </div>
+            <div class="stars">★★★★★</div>
+            <!--<p class="test-text">
+              "lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat"
+            </p>-->
+            <div class="test-author">Mará Banzan</div>
+            <div class="test-role">Paciente GLP-1</div>
+          </div>
+          <div class="test-card">
+            <div class="test-before-after">
+              <img
+                src="../../shared/assets/images/testimonio 3.webp"
+                alt="Resultado Claudia R."
+              />
+            </div>
+            <div class="stars">★★★★★</div>
+            <!--<p class="test-text">
+              "lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quaerat."
+            </p>-->
+            <div class="test-author">Isabel Serna</div>
+            <div class="test-role">Paciente GLP-1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ══════════════════════════════
+       PRECIO
+       ══════════════════════════════ -->
+    <section class="section">
+      <p class="section-label">inversión</p>
+      <div class="price-wrap">
+        <div class="price-left">
+          <div class="price-label">Método Anti-Rebote GLP-1™</div>
+          <div class="price-sub">90 días de acompañamiento personalizado</div>
+          <div class="price-amount">$4,999 <span>MXN</span></div>
+          <div class="price-period">Pago único · Sin mensualidades</div>
+        </div>
+        <div class="price-right">
+          <div class="price-launch">
+            <i class="ti ti-rocket" aria-hidden="true"></i> Precio de
+            lanzamiento
+          </div>
+          <div class="price-right-sub">
+            Disponible para los primeros pacientes
+          </div>
+          <div class="price-old">Valor total: $8,000+ MXN</div>
+          <div class="price-now">Hoy: $4,999 MXN</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-alt" id="reservar">
+      <div class="section-inner">
+        <p class="section-label">reservar lugar</p>
+        <p class="cta-hint">Selecciona fecha y hora para tu primera sesión</p>
+
+        <!-- Calendly inline widget -->
+        <div
+          class="calendly-inline-widget"
+          data-url="https://calendly.com/nutricarloszep1/programaglp-1-metodo-antirebote"
+          style="min-width: 320px; height: 700px"
+        ></div>
+        <script
+          type="text/javascript"
+          src="https://assets.calendly.com/assets/external/widget.js"
+          async
+        ></script>
+      </div>
+    </div>
+
+    <!-- WA Flotante -->
+    <a
+      href="https://wa.me/526643423888?text=Hola%20Carlos%2C%20quiero%20saber%20m%C3%A1s%20sobre%20el%20programa%20GLP-1"
+      target="_blank"
+      rel="noopener"
+      class="wa-float"
+      aria-label="Escribir por WhatsApp"
+      style="
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #25d366;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+        z-index: 9999;
+        text-decoration: none;
+      "
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 32 32"
+        width="28"
+        height="28"
+        fill="#fff"
+      >
+        <path
+          d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.47 2.027 7.773L0 32l8.427-2.01A15.938 15.938 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.265 13.265 0 01-6.79-1.864l-.487-.29-5.005 1.194 1.234-4.874-.317-.5A13.267 13.267 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.862c-.398-.2-2.355-1.162-2.72-1.294-.366-.133-.632-.2-.898.2-.266.398-1.03 1.294-1.263 1.56-.233.266-.465.3-.863.1-.398-.2-1.68-.619-3.2-1.974-1.183-1.055-1.982-2.358-2.214-2.756-.233-.398-.025-.613.175-.811.18-.178.398-.465.598-.698.2-.233.266-.398.398-.664.133-.266.066-.5-.033-.698-.1-.2-.898-2.163-1.23-2.962-.324-.778-.654-.673-.898-.685l-.765-.013c-.266 0-.698.1-1.063.5-.366.398-1.397 1.365-1.397 3.328s1.43 3.86 1.63 4.127c.2.266 2.814 4.296 6.819 6.025.953.411 1.696.657 2.276.841.956.305 1.826.262 2.514.159.767-.114 2.355-.963 2.688-1.893.333-.93.333-1.727.233-1.893-.1-.166-.366-.266-.764-.465z"
+        />
+      </svg>
+    </a>
+
+    <div id="footer"></div>
+    <script src="../../shared/js/topBar.js"></script>
+    <script src="../../shared/js/nav.js"></script>
+    <script src="../../shared/js/footer.js"></script>
+  </body>
+</html>
